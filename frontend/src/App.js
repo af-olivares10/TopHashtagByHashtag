@@ -25,7 +25,7 @@ handleSubmit = (e) => {
         for(let edge of responseJson.graphql.hashtag.edge_hashtag_to_top_posts.edges){
           let text = edge.node.edge_media_to_caption.edges[0].node.text;
           for(let w of text.split(" ")){
-            if(w.startsWith("#") && w!==("#"+values.hashtag)){
+            if(w.startsWith("#") && w.toLowerCase()!==("#"+values.hashtag.toLowerCase())){
               if(!(w in dCount)){
                 dCount[w] = 0;
               }
@@ -61,7 +61,7 @@ mostrarReferencias = () =>{
 }
 mostrarReferencia = (ref, i) =>{
   return (
-    <div>
+    <div key= {i}>
       <h1>{ref.tag}</h1>
       <h1>{ref.count}</h1>
 
