@@ -62,8 +62,8 @@ mostrarReferencias = () =>{
 mostrarReferencia = (ref, i) =>{
   return (
     <div>
-      <h1>ref.tag</h1>
-      <h1>ref.count</h1>
+      <h1>{ref.tag}</h1>
+      <h1>{ref.count}</h1>
 
       <hr/>
 
