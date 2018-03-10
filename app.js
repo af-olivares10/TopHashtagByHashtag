@@ -1,6 +1,5 @@
 var express = require("express");
 var path = require("path");
-var favicon = require("serve-favicon");
 var logger = require("morgan");
 var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
@@ -51,7 +50,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
-app.listen(config.port);
-console.log('Magic happens on port ' + config.port);
 
 module.exports = app;
