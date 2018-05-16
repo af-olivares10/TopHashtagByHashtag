@@ -41,7 +41,9 @@ This app lets you find the most frequent Hashtags that appear with another given
   ```
 
 And you are all set up! Access the app on http://localhost:8080/
-
+## Secret sauce
+ * Design
+ * Fully working
 ## License
 [MIT license](https://github.com/af-olivares10/TopHashtagByHashtag/blob/master/LICENSE)  
 
